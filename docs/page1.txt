@@ -1,0 +1,11 @@
+Welcome to the Phonebook2 docs!
+The docs will present you information on how to use this simple and lightweight
+program.
+
+Phonebook 2 is a simple and lightweight program that can help you keep
+track of your phone numbers. It allows you to add and delete people
+in the phonebook, as well as edit them. It can also export your
+phonebook to a readable text file, and it can import the data from it
+back into the program.
+
+To navigate, click "Next" and "Previous".
