@@ -1,7 +1,7 @@
 # Testing
 This file contains information on how you can download the program and be able to edit it. Mac and Linux users can also download the program this way, but it's not advised to. <br>
 
-##Steps
+## Steps
 First, we need to download Python itself.
 1. Go to [this link](https://www.python.org/downloads/).
 2. Python will automatically detect your OS, click Download Python 3.8.1 or higher. Downloading earlier versions is not recommended as it can bring errors.<br>
