@@ -1,0 +1,7 @@
+Importing a phonebook:
+To import/open a saved phonebook, click "Import" and select the phonebook
+.txt file.
+
+Exporting a phonebook:
+To export/save a phonebook, click "Export" and select the location.
+Make sure to save it as a .txt file.

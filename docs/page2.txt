@@ -1,0 +1,17 @@
+Adding a person to your notebook:
+To add someone, simply click the "Add" button and fill in the entries.
+When you're done, you can just click the "Add" button that appears on the
+window.
+
+Deleting a person from your phonebook:
+To delete someone, just select in your phonebook and click "Delete".
+
+Editing data:
+If you accidentally made a typo when adding someone, or want to change their
+data, select them and click "Edit".
+When you're done filling the entries with updated data, just hit "Edit".
+
+Resetting:
+If you reset, you delete all of your phonebook data in the program and you're no
+longer signed in.
+However, if you have exported your data, you can simply re-import.
