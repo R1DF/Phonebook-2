@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1ef0e19-64f8-436a-a934-b76edcfca94d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/testing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DEVLOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/version.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook2.py" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/prompts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +35,65 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.phonebook2">
+    <configuration name="phonebook2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Phonebook-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/phonebook2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Phonebook-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.phonebook2" />
+      <item itemvalue="Python.temp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.phonebook2" />
+        <item itemvalue="Python.temp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -33,5 +106,35 @@
       <updated>1593670755098</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593688386174">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593688386174" />
+    <state x="417" y="65" key="#phonebook2" timestamp="1593688374349">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="417" y="65" key="#phonebook2/0.0.1440.900@0.0.1440.900" timestamp="1593688374349" />
+    <state x="417" y="65" key="#temp" timestamp="1593782349991">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="417" y="65" key="#temp/0.0.1440.900@0.0.1440.900" timestamp="1593782349991" />
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom" timestamp="1593850116597">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593850116597" />
+    <state width="1398" height="219" key="GridCell.Tab.0.center" timestamp="1593850116596">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593850116596" />
+    <state width="1398" height="219" key="GridCell.Tab.0.left" timestamp="1593850116595">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593850116595" />
+    <state width="1398" height="219" key="GridCell.Tab.0.right" timestamp="1593850116597">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593850116597" />
   </component>
 </project>

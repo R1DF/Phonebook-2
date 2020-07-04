@@ -4,6 +4,10 @@ Control-A: Add a person
 Control-D: Delete a person
 Control-E: Edit a person
 Control-R: Reset
+Control-T: Switch theme
 
 For more information, check out the Github repository at
 github.com/Rem889/Phonebook-2/.
+
+Developer twitter:
+@the4thremesian

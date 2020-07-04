@@ -5,3 +5,9 @@ To import/open a saved phonebook, click "Import" and select the phonebook
 Exporting a phonebook:
 To export/save a phonebook, click "Export" and select the location.
 Make sure to save it as a .txt file.
+
+Themes:
+As of version 1.1.0, Phonebook 2 has 2 themes. A light theme, the default one
+and a gray theme, which goes easier on your eyes. You can switch them
+with the menu in the program, or by using the keyboard shortcut
+Control-T.

@@ -1,5 +1,5 @@
 #imports
-from tkinter import Tk, Frame, Listbox, Label, Button, Menu, messagebox, filedialog, RIGHT, LEFT, SINGLE, END
+from tkinter import Tk, Frame, Listbox, Label, Button, Menu, Scrollbar, messagebox, filedialog, RIGHT, LEFT, BOTH, BROWSE, Y, END
 from prompts import AddPerson, EditPerson, DocsWindow, ExportWindow
 import datetime
 
@@ -8,6 +8,11 @@ class Window(Tk):
     def __init__(self):
         Tk.__init__(self)
         self.user = "GUEST"
+        self.theme = 1
+        self.themeColours = {
+            1:["white"],
+            -1:["#9c9c9c"]
+        }
         self.title("Phonebook 2 ({})".format(self.user))
         self.geometry("300x250")
         self.resizable(width = False, height = False)
@@ -21,40 +26,49 @@ class Window(Tk):
 
         #Widgets:
         self.rightFrame = Frame()
+        self.rightFrame.pack(side=RIGHT)
+
         self.leftFrame = Frame()
+        self.leftFrame.pack(side=LEFT)
 
-        self.phonebook = Listbox(self.leftFrame, height = 15, selectmode = SINGLE)
 
-        self.intro = Label(self.rightFrame, text = "Signed in as {}".format(self.user))
+        self.yscrollbar = Scrollbar(self.leftFrame)
+        self.phonebook = Listbox(self.leftFrame, height = 15, selectmode = BROWSE, yscrollcommand = self.yscrollbar.set)
+        self.yscrollbar.config(command = self.phonebook.yview)
+        self.yscrollbar.pack(fill = Y, side = RIGHT)
+        self.phonebook.pack(fill= BOTH, side = LEFT)
+
+
+        self.introLabel = Label(self.rightFrame, text = "Signed in as {}".format(self.user))
+        self.introLabel.pack()
+
         self.today = str(datetime.date.today()).split("-")
-        self.date = Label(self.rightFrame, text = "{} {}, {}".format(self.today[2], self.months[self.today[1]], self.today[0]))
+        self.dateLabel = Label(self.rightFrame, text = "{} {}, {}".format(self.today[2], self.months[self.today[1]], self.today[0]))
+        self.dateLabel.pack()
+
 
         self.buttonsFrame = Frame(self.rightFrame)
+        self.buttonsFrame.pack()
 
         self.addButton = Button(self.buttonsFrame, text = "Add", width = 5, command = self.add)
-        self.delButton = Button(self.buttonsFrame, text = "Delete", width = 5, command = self.delete)
-        self.editButton = Button(self.buttonsFrame, text="Edit", width=5, command=self.edit)
-        self.resetButton = Button(self.buttonsFrame, text="Reset", width=5, command=self.reset)
-        self.importButton = Button(self.buttonsFrame, text = "Import", width = 5, command = self.imp)
-        self.exportButton = Button(self.buttonsFrame, text="Export", width = 5, command = self.exp)
-        self.docsButton = Button(self.buttonsFrame, text="Docs", width = 5, command = self.docs)
-
-        #Pack
-        self.rightFrame.pack(side = RIGHT)
-        self.leftFrame.pack(side = LEFT)
-
-        self.phonebook.pack()
-
-        self.intro.pack()
-        self.date.pack()
-
-        self.buttonsFrame.pack()
         self.addButton.pack()
+
+        self.delButton = Button(self.buttonsFrame, text = "Delete", width = 5, command = self.delete)
         self.delButton.pack()
+
+        self.editButton = Button(self.buttonsFrame, text="Edit", width=5, command=self.edit)
         self.editButton.pack()
+
+        self.resetButton = Button(self.buttonsFrame, text="Reset", width=5, command=self.reset)
         self.resetButton.pack()
+
+        self.importButton = Button(self.buttonsFrame, text = "Import", width = 5, command = self.imp)
         self.importButton.pack()
+
+        self.exportButton = Button(self.buttonsFrame, text="Export", width = 5, command = self.exp)
         self.exportButton.pack()
+
+        self.docsButton = Button(self.buttonsFrame, text="Docs", width = 5, command = self.docs)
         self.docsButton.pack()
 
         #Create menus and bind
@@ -74,9 +88,10 @@ class Window(Tk):
         self.mainCascade.add_command(label = "Delete person", command = self.delete, accelerator = "Ctrl+D")
         self.mainCascade.add_command(label="Edit person", command = self.edit, accelerator = "Ctrl+E")
         self.mainCascade.add_command(label="Reset phonebook", command = self.reset, accelerator = "Ctrl+R")
+        self.mainCascade.add_command(label="Switch theme", command = self.toggleTheme, accelerator = "Ctrl+T")
         self.mainCascade.add_separator()
-        self.mainCascade.add_command(label="Import")
-        self.mainCascade.add_command(label="Export")
+        self.mainCascade.add_command(label="Import", command = self.imp)
+        self.mainCascade.add_command(label="Export", command = self.exp)
 
         self.aboutCascade = Menu(self.mainMenubar)
         self.mainMenubar.add_cascade(label = "About", menu = self.aboutCascade)
@@ -90,6 +105,7 @@ class Window(Tk):
         self.bind_all("<Control-d>", self.delete) #ctrl d
         self.bind_all("<Control-e>", self.edit) #ctrl e
         self.bind_all("<Control-r>", self.reset)  # ctrl r
+        self.bind_all("<Control-t>", self.toggleTheme) #ctrl t
 
 
     def add(self, event = 0):
@@ -164,7 +180,21 @@ class Window(Tk):
     def update_user(self, user):
         self.user = user
         self.title("Phonebook 2 ({})".format(user))
-        self.intro.config(text = "Signed in as {}".format(user))
+        self.introLabel.config(text = "Signed in as {}".format(user))
+
+    def toggleTheme(self, event = 0):
+        self.theme *= -1 #Multiply theme number by -1, so 1 becomes -1 and -1 becomes 1
+        colour = self.themeColours[self.theme] # this variable makes typing code easier
+        self.config(bg = colour)
+        self.phonebook.config(bg = colour)
+        self.yscrollbar.config(bg = colour)
+
+        self.rightFrame.config(bg = colour)
+        self.dateLabel.config(bg = colour)
+        self.introLabel.config(bg = colour)
+
+        self.leftFrame.config(bg = colour)
+
 
     def close(self):
         if messagebox.askyesno("Quit?", "Quit program? Warning: If you haven't exported the results, your data will be gone."):
