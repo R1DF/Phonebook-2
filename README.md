@@ -8,7 +8,7 @@ There are also the docs, viewable text files that help the user find out how to 
 
 ## Downloads
 THE CURRENT VERSION IS 1.1.0. FOR MORE INFORMATION, VISIT `version.md`.<br>
-Phonebook 2 is available for Windows users, and the program can be downloaded [here](https://drive.google.com/file/d/1VmVRsAqnntm2yZx5P3M0Aga0d7F9qdGN/view?usp=sharing). <br>
+To download for Windows, browse the releases and find the latest one(v1.1.0).
 There is no Mac or Linux file, because the creator currently doesn't know how to freeze the program to Mac/Linux. <br> <br>
 
 However, it is possible to download for Mac and Linux by downloading Python first, to see more go to `testing.md`.
