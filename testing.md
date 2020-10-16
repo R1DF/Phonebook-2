@@ -5,7 +5,7 @@ This file contains information on how you can download the program and be able t
 First, we need to download Python itself.
 1. Go to [this link](https://www.python.org/downloads/).
 2. Python will automatically detect your OS, click Download Python 3.8.1 or higher. Downloading earlier versions is not recommended as it can bring errors.<br>
-    * Do not download Python versions which have 2 at the start! Python 2 works differently than pytohn 3 and it **will** give your program errors!
+    * Do not download Python versions which have 2 at the start! Python 2 works differently than Python 3 and it **will** give your program errors!
 
 Now, we should download the files.
 1. Download these files:
